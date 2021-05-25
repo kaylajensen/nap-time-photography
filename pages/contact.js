@@ -1,0 +1,51 @@
+import Layout from '../components/Layout';
+import Logo from '../components/Logo';
+
+const Contact = () => (
+  <Layout title="Contact">
+    <h1>Contact Me</h1>
+    <div className="about-text">
+      <img src="/static/albums/family-of-three/6.jpg" />
+    </div>
+    <ul className="company-info">
+      <li>
+        <div className="company-logo"><Logo /></div>
+      </li>
+      <li>Indian Land, SC</li>
+      <li>And Greater Charlotte Area</li>
+      <li>
+        <a href="mailto:naptimephotography@gmail.com">naptimephotography</a>
+      </li>
+    </ul>
+    <style jsx>{`
+      .company-info {
+        margin: 0 0 100px 0;
+        padding: 0;
+        list-style: none;
+        font-size: 18px;
+        font-family: 'Jura', sans-serif;
+      }
+      .company-logo {
+        display: inline-block !important;
+      }
+      .about-text {
+        color: #777;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      img {
+        margin: 10px 0 20px 20px;
+      }
+      @media (max-width: 600px) {
+        .about-text img {
+          float: none;
+          display: block;
+          margin: 0 auto 30px;
+        }
+      }
+    `}</style>
+  </Layout>
+);
+
+export default Contact;
