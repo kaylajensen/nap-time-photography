@@ -1,5 +1,5 @@
 import Layout from '../components/Layout';
-import Gallery from '../components/Gallery';
+import Link from 'next/link';
 
 const Albums = () => {
   const images = [];
@@ -12,32 +12,38 @@ const Albums = () => {
   return (
     <Layout title="Albums">
       <h1>Albums</h1>
-    <div className="services">
-      <div className="services-list">
-        <div className="item">
-          <img src="/static/albums/family-of-three/1.jpg" />
-          <h2>FAMILY LIFESTYLE</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque laoreet rhoncus mi ac porta.</p>
-        </div>
-        <div className="item">
-          <img src="/static/albums/portraits/grandparent-3.jpg" />
-          <h2>PORTRAITS</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque laoreet rhoncus mi ac porta.</p>
-        </div>
-        <div className="item">
-          <img src="/static/albums/engagement/engagement-7.jpg" />
-          <h2>ENGAGEMENT</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque laoreet rhoncus mi ac porta.</p>
-        </div>
-        <div className="item">
-          <img src="/static/albums/baby-lifestyle/lemons-5.jpg" />
-          <h2>0-12 MONTH LIFESTYLE & MILESTONES</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque laoreet rhoncus mi ac porta.</p>
+      <div className="services">
+        <div className="services-list">
+          <Link href="/family-lifestyle">
+            <div className="item">
+              <img src="/static/albums/family-of-three/1.jpg" />
+              <h2>FAMILY LIFESTYLE</h2>
+              <p>Capture moments of your beautiful family doing what you do best together, loving each other!</p>
+            </div>
+          </Link>
+          <Link href="/baby-lifestyle">
+            <div className="item">
+              <img src="/static/albums/baby-lifestyle/lemons-5.jpg" />
+              <h2>BABY LIFESTYLE & MILESTONES</h2>
+              <p>These sweet moments go by so fast. Capture them before they're gone!</p>
+            </div>
+          </Link>
+          <Link href="/engagement">
+            <div className="item">
+              <img src="/static/albums/engagement/engagement-7.jpg" />
+              <h2>ENGAGEMENT</h2>
+              <p>Congratulations! Capture the love and excitement for the adventures together ahead in marriage.</p>
+            </div>
+          </Link>
+          <Link href="/portraits">
+            <div className="item">
+              <img src="/static/albums/portraits/grandparent-3.jpg" />
+              <h2>PORTRAITS & HEADSHOTS</h2>
+              <p>Capture other moments you'd like to savor. Or update a LinkedIn profile with professional headshots.</p>
+            </div>
+          </Link>
         </div>
       </div>
-    </div>
-      <h1>Albums</h1>
-      <Gallery images={images} />
       <style jsx>{`
       .services {
         max-width: 1000px;
@@ -53,6 +59,10 @@ const Albums = () => {
         padding: 20px;
         margin-bottom: 40px;
         width: 50%;
+        cursor: pointer;
+      }
+      .services .item:hover {
+        border: 1px solid #f08da8;
       }
       img {
         max-width: 100%;

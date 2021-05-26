@@ -7,7 +7,7 @@ const About = () => (
       <div className="item">
         <img src="/static/albums/family-of-three/6.jpg" />
         <h2>Kayla Jensen</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque laoreet rhoncus mi ac porta.</p>
+        <p>Update on 10% of client investment goes to Gideon Bible Organization.</p>
       </div>
     </div>
     <style jsx>{`

@@ -45,7 +45,7 @@ const Menu = () => (
       }
       .menu li a:hover {
         padding-bottom: 3px;
-        border-bottom: 2px solid #c5a47e;
+        border-bottom: 1px solid #f08da8;
       }
       @media (max-width: 600px) {
         .menu {

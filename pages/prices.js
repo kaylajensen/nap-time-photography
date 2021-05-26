@@ -1,53 +1,55 @@
 import Layout from '../components/Layout';
 
 const Prices = () => (
-  <Layout title="Prices">
-    <h1>Investment</h1>
-    <div className="about-text">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut est euismod, iaculis ante efficitur, sodales
-        nisl. Nulla non orci vitae nibh ullamcorper finibus. Morbi a nisl tempor, sodales ex quis, aliquet neque. Lorem
-        ipsum dolor sit amet, consectetur adipiscing elit.
-      </p>
-      <p>
-        Praesent gravida a diam ut faucibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-        inceptos himenaeos. Sed sed nibh a ipsum sagittis finibus ac in magna. Curabitur id mauris quis nulla commodo
-        tristique.
-      </p>
-      <p>
-        Nunc eu mi et justo sodales vehicula. Vestibulum velit erat, tincidunt sed tortor id, viverra egestas felis.
-        Cras in ullamcorper ex. Etiam diam lacus, interdum sed rhoncus vel, ultricies ut nisi. Nam ut orci at ante
-        auctor mollis. Phasellus eget augue ac nibh vestibulum pellentesque. Nulla enim augue, placerat id malesuada at,
-        maximus sed tortor.
-      </p>
+  <Layout title="Albums">
+  <h1>Investment</h1>
+  <div className="services">
+    <div className="services-list">
+      <div className="item">
+        <img src="/static/albums/baby-lifestyle/lemons-2.jpg" />
+        <h2>All Sessions Begin at $99</h2>
+        <p>Capture moments of your beautiful family doing what you do best together, loving each other!</p>
+      </div>
     </div>
-    <style jsx>{`
-      .company-info {
-        margin: 0 0 100px 0;
-        padding: 0;
-        list-style: none;
-        font-size: 18px;
-      }
-      .company {
-        font-weight: 700;
-        font-size: 24px;
-      }
-      .about-text {
-        color: #777;
-        text-align: left;
-        max-width: 800px;
-        margin: 0 auto 100px;
-        padding: 20px;
-      }
-      @media (max-width: 600px) {
-        .about-text img {
-          float: none;
-          display: block;
-          margin: 0 auto 30px;
-        }
-      }
-    `}</style>
-  </Layout>
+  </div>
+  <style jsx>{`
+  .services {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .services-list {
+    padding: 0 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .services .item {
+    padding: 20px;
+    margin-bottom: 40px;
+    width: 50%;
+    cursor: pointer;
+  }
+  .services .item:hover {
+    border: 1px solid #f08da8;
+  }
+  img {
+    max-width: 100%;
+  }
+  h2 {
+    margin: 0 0 5px 0;
+  }
+  p {
+    font-size: 18px;
+    color: #777;
+  }
+  @media (max-width: 600px) {
+    .services .item {
+      width: auto;
+      padding: 10px 20px;
+    }
+  }
+`}</style>
+</Layout>
 );
 
 export default Prices;
