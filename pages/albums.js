@@ -20,17 +20,17 @@ const Albums = () => {
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque laoreet rhoncus mi ac porta.</p>
         </div>
         <div className="item">
-          <img src="/static/albums/family-of-three/2.jpg" />
+          <img src="/static/albums/portraits/grandparent-3.jpg" />
           <h2>PORTRAITS</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque laoreet rhoncus mi ac porta.</p>
         </div>
         <div className="item">
-          <img src="/static/albums/family-of-three/3.jpg" />
+          <img src="/static/albums/engagement/engagement-7.jpg" />
           <h2>ENGAGEMENT</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque laoreet rhoncus mi ac porta.</p>
         </div>
         <div className="item">
-          <img src="/static/albums/family-of-three/4.jpg" />
+          <img src="/static/albums/baby-lifestyle/lemons-5.jpg" />
           <h2>0-12 MONTH LIFESTYLE & MILESTONES</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque laoreet rhoncus mi ac porta.</p>
         </div>
