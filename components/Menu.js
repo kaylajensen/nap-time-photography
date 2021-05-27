@@ -29,7 +29,7 @@ const Menu = () => (
     </li>
     <style jsx>{`
       .menu {
-        margin: 5px 0 0;
+        margin: 0;
         padding: 0;
         list-style: none;
         display: flex;
@@ -50,7 +50,7 @@ const Menu = () => (
       @media (max-width: 600px) {
         .menu {
           display: block;
-          margin-top: 20px;
+          margin-top: -15px
         }
         .menu li {
           display: inline-block;

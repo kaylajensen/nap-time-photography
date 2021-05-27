@@ -40,6 +40,9 @@ const Homepage = () => (
         h1 {
           font-size: 28px;
         }
+        .cover {
+          margin-top: 15px;
+        }
       }
     `}</style>
   </Layout>
