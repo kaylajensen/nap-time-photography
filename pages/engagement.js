@@ -3,9 +3,9 @@ import Gallery from '../components/Gallery';
 
 const Engagement = () => {
   const images = [];
-  const imageCount = 8;
+  const imageCount = 1;
 
-  for (let i = imageCount; i > 0; i--) {
+  for (let i = imageCount; i < 9; i++) {
     images.push(`/static/albums/engagement/engagement-${i}.jpg`);
   }
 

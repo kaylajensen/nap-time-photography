@@ -1,13 +1,9 @@
 import Layout from '../components/Layout';
-import Logo from '../components/Logo';
 
 const Contact = () => (
   <Layout title="Contact">
     <h1>Contact Me</h1>
     <ul className="company-info">
-      <li>
-        <div className="company-logo"><Logo /></div>
-      </li>
       <li>Indian Land, SC</li>
       <li>And Greater Charlotte Area</li>
       <li>
