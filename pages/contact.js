@@ -4,9 +4,6 @@ import Logo from '../components/Logo';
 const Contact = () => (
   <Layout title="Contact">
     <h1>Contact Me</h1>
-    <div className="about-text">
-      <img src="/static/albums/family-of-three/6.jpg" />
-    </div>
     <ul className="company-info">
       <li>
         <div className="company-logo"><Logo /></div>

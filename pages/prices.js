@@ -8,7 +8,8 @@ const Prices = () => (
       <div className="item">
         <img src="/static/albums/baby-lifestyle/lemons-2.jpg" />
         <h2>All Sessions Begin at $99</h2>
-        <p>Capture moments of your beautiful family doing what you do best together, loving each other!</p>
+        <p>Sessions begin at 30 minutes. You will recieve 10-15 edited digital photos.</p>
+        <p>I can work around these times but the best shoot time is 1-2 hours after sunrise or 1-2 hours before sunset. </p>
       </div>
     </div>
   </div>
@@ -21,7 +22,7 @@ const Prices = () => (
     padding: 0 30px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
   }
   .services .item {
     padding: 20px;
@@ -29,8 +30,8 @@ const Prices = () => (
     width: 50%;
     cursor: pointer;
   }
-  .services .item:hover {
-    border: 1px solid #f08da8;
+  .services .item {
+    border: 2px solid #f08da8;
   }
   img {
     max-width: 100%;

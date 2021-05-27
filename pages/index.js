@@ -3,15 +3,7 @@ import Layout from '../components/Layout';
 
 const Homepage = () => (
   <Layout>
-    <div className="cover">
-      {/* <div className="hello">
-        <h1>Hi there, memory treasurer!</h1>
-        <div>I'd love to help capture your family's moments</div>
-        <Link href="/albums">
-          <a className="view-more">Gallery</a>
-        </Link>
-      </div> */}
-    </div>
+    <div className="cover"/>
     <style jsx>{`
       .cover {
         position: relative;

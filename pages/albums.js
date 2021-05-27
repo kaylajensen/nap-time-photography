@@ -39,7 +39,7 @@ const Albums = () => {
             <div className="item">
               <img src="/static/albums/portraits/grandparent-3.jpg" />
               <h2>PORTRAITS & HEADSHOTS</h2>
-              <p>Capture other moments you'd like to savor. Or update a LinkedIn profile with professional headshots.</p>
+              <p>Capture other moments you'd like to savor. Or update your professional headshots.</p>
             </div>
           </Link>
         </div>
@@ -62,7 +62,7 @@ const Albums = () => {
         cursor: pointer;
       }
       .services .item:hover {
-        border: 1px solid #f08da8;
+        border: 2px solid #f08da8;
       }
       img {
         max-width: 100%;
