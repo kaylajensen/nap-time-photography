@@ -30,7 +30,7 @@ const Albums = () => {
           </Link>
           <Link href="/engagement">
             <div className="item">
-              <img src="/static/albums/engagement/engagement-7.jpg" />
+              <img src="/static/albums/engagement/engagement-6.jpg" />
               <h2>ENGAGEMENT</h2>
               <p>Congratulations! Capture the love and excitement for the adventures together ahead in marriage.</p>
             </div>
