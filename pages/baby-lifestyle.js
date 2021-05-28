@@ -18,7 +18,7 @@ const BabyLifestyle = () => {
 
   return (
     <Layout title="Albums">
-      <h1>0-12 Month Milestones</h1>
+      <h1>Monthly Milestones</h1>
       <Gallery images={milestoneImages} />
       <h1>Baby Lifestyle</h1>
       <Gallery images={lifestyleImages} />

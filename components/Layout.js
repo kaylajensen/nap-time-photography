@@ -80,6 +80,12 @@ const Layout = props => (
         min-height: 600px;
         text-align: center;
       }
+
+      @media (max-width: 600px) {
+        h1 {
+          font-size: 45px;
+        }
+      }
     `}</style>
   </div>
 );

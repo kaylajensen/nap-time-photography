@@ -13,7 +13,7 @@ const Logo = () => (
         display: block;
         width: 300px;
       }
-      @media (max-width: 600px) {
+      @media (max-width: 800px) {
         .logo {
           display: inline-block;
         }

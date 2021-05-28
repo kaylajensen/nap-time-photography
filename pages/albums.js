@@ -37,7 +37,7 @@ const Albums = () => {
           </Link>
           <Link href="/portraits">
             <div className="item">
-              <img src="/static/albums/portraits/grandparent-3.jpg" />
+              <img src="/static/albums/portraits/grandparent-2.jpg" />
               <h2>PORTRAITS & HEADSHOTS</h2>
               <p>Capture other moments you'd like to savor. Or update your professional headshots.</p>
             </div>

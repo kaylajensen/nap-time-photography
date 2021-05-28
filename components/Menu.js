@@ -47,7 +47,7 @@ const Menu = () => (
         padding-bottom: 3px;
         border-bottom: 1px solid #f08da8;
       }
-      @media (max-width: 600px) {
+      @media (max-width: 800px) {
         .menu {
           display: block;
           margin-top: -15px

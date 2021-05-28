@@ -6,9 +6,9 @@ const Prices = () => (
   <div className="services">
     <div className="services-list">
       <div className="item">
-        <img src="/static/albums/baby-lifestyle/lemons-2.jpg" />
         <h2>All Sessions Begin at $99</h2>
-        <p>Sessions begin at 30 minutes. You will recieve 10-15 edited digital photos.</p>
+        <p>Sessions begin at 30 minutes.</p>
+        <p>You will recieve 10-15 edited digital photos.</p>
         <p>I can work around these times but the best shoot time is 1-2 hours after sunrise or 1-2 hours before sunset. </p>
       </div>
     </div>
