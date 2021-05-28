@@ -2,3 +2,4 @@
 /.vscode
 /.next
 /public/static/albums/.DS_Store
+.env
