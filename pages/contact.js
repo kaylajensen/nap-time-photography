@@ -33,7 +33,7 @@ export default function Contact() {
       body: JSON.stringify(data)
     }).then((res) => {
         console.log('Response received')
-        if (res.result === "success") {
+        if (res.statusCode === 200) {
             console.log('Response succeeded!')
             setSubmitted(true) 
             setName('')
@@ -82,6 +82,20 @@ export default function Contact() {
           < input type='submit' onClick={(e)=>{handleSubmit(e)}}/>
         </form >
       </div>
+      <style jsx>{`
+        input[type='submit'] {
+          border-color: #f08da8;
+          background-color: white;
+          border-style: solid;
+          padding: 5px 20px;
+          text-transform: uppercase;
+          font-family: 'Jura';
+          font-weight: bold;
+          font-size: 19px;
+          margin-top: 15px;
+        }
+      `}
+      </style>
     </Layout>
   )
 }
