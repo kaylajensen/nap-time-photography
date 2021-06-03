@@ -13,7 +13,7 @@ exports.handler = function(event, context, callback) {
     }
     });
 
-    const mailBody = `<div>${`Name: ${data.name} \n Email: ${data.email} \n Phone Number: ${data.phoneNumber} \n Ideal Session Date: ${data.sessionDate} \n Service Information: ${data.service}`}</div>`
+    const mailBody = `<div>${`Name: ${data.name} <br><br> Email: ${data.email} <br><br> Phone Number: ${data.phoneNumber} <br><br> Ideal Session Date: ${data.sessionDate} <br><br> Service Information: ${data.service}`}</div>`
     
     transporter.sendMail({
         from: 'naptimephotographer@gmail.com',
