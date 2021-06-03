@@ -33,6 +33,7 @@ export default function Contact() {
       body: JSON.stringify(data)
     }).then((res) => {
         console.log('Response received')
+        console.log(res)
         if (res.statusCode === 200) {
             console.log('Response succeeded!')
             setSubmitted(true) 
