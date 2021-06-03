@@ -13,11 +13,13 @@ exports.handler = function(event, context, callback) {
     }
     });
 
+    const mailBody = `<div>${`Name: ${data.name} \n Email: ${data.email} \n Phone Number: ${data.phoneNumber} \n Ideal Session Date: ${data.sessionDate} \n Service Information: ${data.service}`}</div>`
+    
     transporter.sendMail({
         from: 'naptimephotographer@gmail.com',
         to: 'naptimephotographer@gmail.com',
         subject: `NEW Client Request From ${data.name}`,
-        html: `<div>${`Name: ${data.name} | Email: ${data.email} | Phone Number: ${data.phoneNumber} | Ideal Session Date: ${data.sessionDate} | Service Information: ${data.service}`}</div>`
+        html: mailBody
     }, function(error, info) {
         if (error) {
             callback(error);
