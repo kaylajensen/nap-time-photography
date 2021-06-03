@@ -33,7 +33,7 @@ export default function Contact() {
       body: JSON.stringify(data)
     }).then((res) => {
         console.log('Response received')
-        if (res.status === 200) {
+        if (res.result === "success") {
             console.log('Response succeeded!')
             setSubmitted(true) 
             setName('')
@@ -75,7 +75,7 @@ export default function Contact() {
           </formGroup>
 
           < formGroup className={styles.inputGroup}>
-            < label htmlFor='service'>What service are you interested in? Do you have a location in mind? Tell me about yourself.</label>
+            < label htmlFor='service'>Please let me know which service are you interested in. Do you have a location in mind? Tell me about yourself.</label>
             < input type='text' onChange={(e)=>{setService(e.target.value)}} name='service' className={styles.longMessageGroup} />
           </formGroup>
 
@@ -85,46 +85,3 @@ export default function Contact() {
     </Layout>
   )
 }
-
-// const Contact = () => (
-//   <Layout title="Contact">
-//     <h1>Contact Me</h1>
-//     <ul className="company-info">
-//       <li>Indian Land, SC</li>
-//       <li>And Greater Charlotte Area</li>
-//       <li>
-//         <a href="mailto:naptimephotography@gmail.com">naptimephotography</a>
-//       </li>
-//     </ul>
-//     <style jsx>{`
-      // .company-info {
-      //   margin: 0 0 100px 0;
-      //   padding: 0;
-      //   list-style: none;
-      //   font-size: 18px;
-      //   font-family: 'Jura', sans-serif;
-      // }
-      // .company-logo {
-      //   display: inline-block !important;
-      // }
-      // .about-text {
-      //   color: #777;
-      //   max-width: 800px;
-      //   margin: 0 auto;
-      //   padding: 20px;
-      // }
-      // img {
-      //   margin: 10px 0 20px 20px;
-      // }
-      // @media (max-width: 600px) {
-      //   .about-text img {
-      //     float: none;
-      //     display: block;
-      //     margin: 0 auto 30px;
-      //   }
-      // }
-//     `}</style>
-//   </Layout>
-// );
-
-// export default Contact;

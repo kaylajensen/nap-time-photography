@@ -9,7 +9,7 @@ const Prices = () => (
         <h2>All Sessions Begin at $99</h2>
         <p>Sessions begin at 30 minutes.</p>
         <p>You will recieve 10-15 edited digital photos.</p>
-        <p>I can work around these times but the best shoot time is 1-2 hours after sunrise or 1-2 hours before sunset. </p>
+        <p>The best photo shoot times are 1-2 hours after sunrise and 1-2 hours before sunset, but I am able to be flexible around these hours.</p>
       </div>
     </div>
   </div>
