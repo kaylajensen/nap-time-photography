@@ -33,13 +33,14 @@ export default function Contact() {
       body: JSON.stringify(data)
     }).then((res) => {
         console.log('Response received')
-        console.log(res)
-        setSubmitted(true) 
-        setName('')
-        setEmail('')
-        setPhoneNumber('')
-        setSessionDate('')
-        setService('')
+        if (res.status === 200) {
+          setSubmitted(true) 
+          setName('')
+          setEmail('')
+          setPhoneNumber('')
+          setSessionDate('')
+          setService('')
+        }
     })
   }
 
@@ -50,36 +51,37 @@ export default function Contact() {
         <li>Serving Indian Land, South Carolina</li>
         <li>& the Greater Charlotte Area</li>
       </ul>
-      <div className={styles.container}>
-        < form className={styles.main} >
-          < formGroup className={styles.inputGroup} >
+      {!submitted && <div className={styles.container}>
+        < form className={styles.main} onSubmit={handleSubmit} >
+          < div className={styles.inputGroup} >
             < label htmlFor='name'>Name</label>
-            < input type='text' onChange={(e)=>{setName(e.target.value)}} name='name' className={styles.inputField} />
-          </formGroup>
+            < input type='text' onChange={(e)=>{setName(e.target.value)}} name='name' className={styles.inputField} value={name} />
+          </div>
 
-          < formGroup className={styles.inputGroup} >
+          < div className={styles.inputGroup} >
             < label htmlFor='email'>Email</label>
-            < input type='email' onChange={(e)=>{setEmail(e.target.value)}} name='email' className={styles.inputField} />
-          </formGroup>
+            < input type='email' onChange={(e)=>{setEmail(e.target.value)}} name='email' className={styles.inputField} value={email} />
+          </div>
 
-          < formGroup className={styles.inputGroup} >
+          < div className={styles.inputGroup} >
             < label htmlFor='phoneNumber'>Phone Number</label>
-            < input type='tel' onChange={(e)=>{setPhoneNumber(e.target.value)}} name='phoneNumber' className={styles.inputField} />
-          </formGroup>
+            < input type='tel' onChange={(e)=>{setPhoneNumber(e.target.value)}} name='phoneNumber' className={styles.inputField} value={phoneNumber} />
+          </div>
 
-          < formGroup className={styles.inputGroup} >
+          < div className={styles.inputGroup} >
             < label htmlFor='sessionDate'>Ideal Session Date</label>
-            < input type='text' onChange={(e)=>{setSessionDate(e.target.value)}} name='sessionDate' className={styles.inputField} />
-          </formGroup>
+            < input type='text' onChange={(e)=>{setSessionDate(e.target.value)}} name='sessionDate' className={styles.inputField} value={sessionDate} />
+          </div>
 
-          < formGroup className={styles.inputGroup}>
+          < div className={styles.inputGroup}>
             < label htmlFor='service'>Please let me know which service are you interested in. Do you have a location in mind? Tell me about yourself.</label>
-            < input type='text' onChange={(e)=>{setService(e.target.value)}} name='service' className={styles.longMessageGroup} />
-          </formGroup>
+            < input type='text' onChange={(e)=>{setService(e.target.value)}} name='service' className={styles.longMessageGroup} value={service} />
+          </div>
 
-          < input type='submit' onClick={(e)=>{handleSubmit(e)}}/>
+          < input type='submit' />
         </form >
-      </div>
+      </div>}
+      {submitted && <div><h1>Thank you!</h1><p>I'll get back to you ASAP.</p></div>}
       <style jsx>{`
         input[type='submit'] {
           border-color: #f08da8;
