@@ -75,7 +75,7 @@ export default function Contact() {
 
           < div className={styles.inputGroup}>
             < label htmlFor='service'>Please let me know which service are you interested in. Do you have a location in mind? Tell me about yourself.</label>
-            < input type='text' onChange={(e)=>{setService(e.target.value)}} name='service' className={styles.longMessageGroup} value={service} />
+            < textarea type='text' onChange={(e)=>{setService(e.target.value)}} name='service' className={styles.longMessageGroup} value={service} />
           </div>
 
           < input type='submit' />

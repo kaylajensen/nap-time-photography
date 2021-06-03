@@ -29,6 +29,13 @@
     font-size: 18px;
     }
 
+    .inputGroup textarea {
+      resize: none;
+      font-family: 'Jura', sans-serif;
+      padding: 5px 15px;
+      font-size: 18px;
+    }
+
     .longMessageGroup {
         height: 100px;
     }
