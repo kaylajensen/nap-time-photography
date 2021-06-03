@@ -24,7 +24,7 @@ export default function Contact() {
         service
     }
 
-    fetch('/api/contact', {
+    fetch('/api/sendmail', {
       method: 'POST',
       headers: {
         'Accept': 'application/json, text/plain, */*',
