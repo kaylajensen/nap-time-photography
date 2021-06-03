@@ -34,15 +34,12 @@ export default function Contact() {
     }).then((res) => {
         console.log('Response received')
         console.log(res)
-        if (res.statusCode === 200) {
-            console.log('Response succeeded!')
-            setSubmitted(true) 
-            setName('')
-            setEmail('')
-            setPhoneNumber('')
-            setSessionDate('')
-            setService('')
-        }
+        setSubmitted(true) 
+        setName('')
+        setEmail('')
+        setPhoneNumber('')
+        setSessionDate('')
+        setService('')
     })
   }
 
