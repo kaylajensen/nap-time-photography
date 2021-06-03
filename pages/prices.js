@@ -2,7 +2,7 @@ import Layout from '../components/Layout';
 
 const Prices = () => (
   <Layout title="Albums">
-  <h1>Investment</h1>
+  <h1>Pricing</h1>
   <div className="services">
     <div className="services-list">
       <div className="item">

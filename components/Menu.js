@@ -19,7 +19,7 @@ const Menu = () => (
     </li>
     <li>
       <Link href="/prices">
-        <a>INVESTMENT</a>
+        <a>PRICING</a>
       </Link>
     </li>
     <li>
