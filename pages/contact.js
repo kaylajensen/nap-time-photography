@@ -24,24 +24,19 @@ export default function Contact() {
         service
     }
 
-    fetch('/api/sendmail', {
-      method: 'POST',
-      headers: {
-        'Accept': 'application/json, text/plain, */*',
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(data)
-    }).then((res) => {
-        console.log('Response received')
-        if (res.status === 200) {
-          setSubmitted(true) 
-          setName('')
-          setEmail('')
-          setPhoneNumber('')
-          setSessionDate('')
-          setService('')
-        }
-    })
+    var link = "mailto:naptimephotographer@gmail.com?"
+             + "&subject=" + encodeURIComponent(`NEW CLIENT: ${name}`)
+             + "&body=" + `Name: ${name} ---- Email: ${email} ---- Phone Number: ${phoneNumber} ---- Session Date: ${sessionDate} ---- Service: ${service}`
+    ;
+    
+    window.location.href = link;
+
+    setSubmitted(true) 
+    setName('')
+    setEmail('')
+    setPhoneNumber('')
+    setSessionDate('')
+    setService('')
   }
 
   return (
@@ -81,7 +76,7 @@ export default function Contact() {
           < input type='submit' />
         </form >
       </div>}
-      {submitted && <div><h1>Thank you!</h1><p>I'll get back to you ASAP.</p></div>}
+      {submitted && <div><h1>Thank you!</h1><p>Your email should have opened to send the form information. I'll get back to you ASAP.</p></div>}
       <style jsx>{`
         input[type='submit'] {
           border-color: #f08da8;
