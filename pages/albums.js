@@ -16,9 +16,16 @@ const Albums = () => {
         <div className="services-list">
           <Link href="/family-lifestyle">
             <div className="item">
-              <img src="/static/albums/family-of-three/1.jpg" />
+              <img src="/static/albums/family-of-three/5.jpg" />
               <h2>FAMILY LIFESTYLE</h2>
               <p>Capture moments of your beautiful family doing what you do best together, loving each other!</p>
+            </div>
+          </Link>
+          <Link href="/maternity">
+            <div className="item">
+              <img src="/static/albums/maternity/1.jpg" />
+              <h2>MATERNITY</h2>
+              <p>Soak up this sweet heavenly preparation.</p>
             </div>
           </Link>
           <Link href="/baby-lifestyle">

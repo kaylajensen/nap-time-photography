@@ -8,7 +8,7 @@ const Homepage = () => (
       .cover {
         position: relative;
         min-height: 600px;
-        background: transparent url(/static/cover.jpg) no-repeat center center;
+        background: transparent url(/static/cover-1.jpg) no-repeat center center;
         background-size: cover;
       }
       .hello {
